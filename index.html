@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Swarm Survivors — Play Free Online | Survive Endless Monster Waves</title>
+  <meta name="description" content="Play Swarm Survivors online — a fast, lightweight survivor roguelike in your browser. Kite endless monster swarms, unlock upgrades, and aim for the longest run." />
+  <meta name="keywords" content="Swarm Survivors, swarm survivors, play swarm survivors, survivor roguelike, monster survivors, browser game, online game" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://swarmsurvivors.online/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Swarm Survivors" />
+  <meta property="og:title" content="Swarm Survivors — Play Free Online" />
+  <meta property="og:description" content="Survive endless swarms, collect upgrades, and push your best run — directly in your browser." />
+  <meta property="og:url" content="https://swarmsurvivors.online/" />
+  <meta property="og:image" content="https://swarmsurvivors.online/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Swarm Survivors — Play Free Online" />
+  <meta name="twitter:description" content="A slick, lightweight survivor roguelike — play instantly in your browser." />
+  <meta name="twitter:image" content="https://swarmsurvivors.online/og-image.jpg" />
+
+  <!-- Preconnect to speed up the iframe origin -->
+  <link rel="preconnect" href="https://cloud.onlinegames.io" crossorigin />
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Minimal custom CSS for responsive iframe -->
+  <style>
+    .ratio-16x9{position:relative;width:100%;padding-top:56.25%}
+    .ratio-16x9 > iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:16px}
+  </style>
+
+  <!-- JSON-LD: Game + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Swarm Survivors",
+    "url": "https://swarmsurvivors.online/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Swarm Survivors",
+    "url": "https://swarmsurvivors.online/",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "genre": ["Action", "Roguelike", "Survivor"],
+    "playMode": "SinglePlayer",
+    "isAccessibleForFree": true,
+    "inLanguage": "en",
+    "description": "A fast, lightweight survivor roguelike played directly in your browser. Kite waves of monsters, collect upgrades, and chase high scores."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Is Swarm Survivors free to play?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. Swarm Survivors is free to play in your browser with no installation required."}
+      },
+      {
+        "@type":"Question",
+        "name":"Which devices are supported?",
+        "acceptedAnswer":{"@type":"Answer","text":"Modern desktop and mobile browsers are supported. For the best performance, use a recent version of Chrome, Edge, Safari, or Firefox."}
+      },
+      {
+        "@type":"Question",
+        "name":"How do I improve performance?",
+        "acceptedAnswer":{"@type":"Answer","text":"Close unused tabs, switch the browser to a hardware-accelerated mode, and reduce background applications. On mobile, ensure battery-saver is off."}
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-neutral-50 text-neutral-900 antialiased">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-neutral-200">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <span class="inline-block h-8 w-8 rounded-xl bg-neutral-900"></span>
+        <span class="font-semibold tracking-tight text-lg">Swarm Survivors</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#play" class="hover:text-blue-600 transition">Play</a>
+        <a href="#about" class="hover:text-blue-600 transition">About</a>
+        <a href="#how" class="hover:text-blue-600 transition">How to Play</a>
+        <a href="#features" class="hover:text-blue-600 transition">Features</a>
+        <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-4 pt-12 pb-8">
+    <div class="grid md:grid-cols-2 items-center gap-8">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+          Swarm Survivors
+        </h1>
+        <p class="mt-4 text-lg text-neutral-600">
+          A sleek, browser-based survivor roguelike. <span class="text-neutral-900 font-medium">Kite endless monster waves</span>, stack upgrades, and chase your longest run — no installs required.
+        </p>
+        <div class="mt-6 flex items-center gap-3">
+          <a href="#play" class="inline-flex items-center justify-center rounded-2xl px-5 py-3 bg-neutral-900 text-white hover:bg-neutral-800 transition">
+            Play Now
+          </a>
+          <a href="#about" class="inline-flex items-center justify-center rounded-2xl px-5 py-3 bg-white border border-neutral-200 hover:border-neutral-300 hover:bg-neutral-50 transition">
+            Learn More
+          </a>
+        </div>
+        <p class="mt-3 text-xs text-neutral-500">Optimized for desktop and mobile. Best on modern Chrome, Safari, Edge, or Firefox.</p>
+      </div>
+      <div class="rounded-3xl border border-neutral-200 bg-white p-2 shadow-sm">
+        <div class="ratio-16x9">
+          <iframe
+            id="game"
+            title="Play Swarm Survivors Online"
+            src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
+            loading="lazy"
+            allow="fullscreen; web-share; gamepad; xr-spatial-tracking"
+            allowfullscreen
+            referrerpolicy="no-referrer"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="mx-auto max-w-6xl px-4 space-y-16 pb-16">
+
+    <!-- Play -->
+    <section id="play" aria-labelledby="play-title" class="scroll-mt-24">
+      <h2 id="play-title" class="text-2xl md:text-3xl font-bold tracking-tight">Play Swarm Survivors Online</h2>
+      <p class="mt-3 text-neutral-600">
+        Tap the canvas above and start your run. Survive as long as possible while swarms ramp up. Collect orbs, choose upgrades, and keep moving.
+      </p>
+      <div class="mt-6 rounded-3xl border border-neutral-200 bg-white p-3 shadow-sm">
+        <div class="ratio-16x9">
+          <iframe
+            title="Swarm Survivors Game Frame"
+            src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
+            loading="lazy"
+            allow="fullscreen; web-share; gamepad; xr-spatial-tracking"
+            allowfullscreen
+            referrerpolicy="no-referrer"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-title" class="scroll-mt-24">
+      <h2 id="about-title" class="text-2xl md:text-3xl font-bold tracking-tight">About the Game</h2>
+      <p class="mt-3 text-neutral-600">
+        <strong>Swarm Survivors</strong> is a fast, lightweight action roguelike designed for instant play.
+        Every run drops you into a minimalist arena where monsters scale in numbers and pace.
+        Your goal: kite efficiently, avoid contact, gather resources, and invest in upgrades that snowball your survivability.
+      </p>
+    </section>
+
+    <!-- How to Play -->
+    <section id="how" aria-labelledby="how-title" class="scroll-mt-24">
+      <h2 id="how-title" class="text-2xl md:text-3xl font-bold tracking-tight">How to Play</h2>
+      <div class="mt-4 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-neutral-200 bg-white p-5">
+          <h3 class="font-semibold">1) Keep Moving</h3>
+          <p class="mt-2 text-neutral-600">Kite swarms in wide arcs. Staying mobile reduces contact damage and buys time for cooldowns.</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-200 bg-white p-5">
+          <h3 class="font-semibold">2) Collect & Upgrade</h3>
+          <p class="mt-2 text-neutral-600">Pick up orbs to unlock upgrades — prioritize area control, sustained DPS, and survivability.</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-200 bg-white p-5">
+          <h3 class="font-semibold">3) Extend the Run</h3>
+          <p class="mt-2 text-neutral-600">Stack synergies that scale over time, then push for your personal best score.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" aria-labelledby="features-title" class="scroll-mt-24">
+      <h2 id="features-title" class="text-2xl md:text-3xl font-bold tracking-tight">Features</h2>
+      <ul class="mt-4 grid md:grid-cols-2 gap-4 text-neutral-700">
+        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>Zero-install, instant browser play</li>
+        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Scaling swarms & escalating difficulty</li>
+        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>Upgrade choices that change each run</li>
+        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Responsive UI for desktop and mobile</li>
+      </ul>
+    </section>
+
+    <!-- Controls -->
+    <section id="controls" aria-labelledby="controls-title" class="scroll-mt-24">
+      <h2 id="controls-title" class="text-2xl md:text-3xl font-bold tracking-tight">Controls</h2>
+      <div class="mt-3 overflow-x-auto rounded-2xl border border-neutral-200 bg-white">
+        <table class="min-w-full text-sm">
+          <thead class="bg-neutral-50 text-neutral-600">
+            <tr>
+              <th class="px-4 py-3 text-left">Action</th>
+              <th class="px-4 py-3 text-left">Desktop</th>
+              <th class="px-4 py-3 text-left">Mobile</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-neutral-200">
+            <tr>
+              <td class="px-4 py-3">Move</td>
+              <td class="px-4 py-3">WASD / Arrow Keys</td>
+              <td class="px-4 py-3">Drag joystick / swipe</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Confirm / Pickup</td>
+              <td class="px-4 py-3">Space / Enter</td>
+              <td class="px-4 py-3">Tap</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-title" class="scroll-mt-24">
+      <h2 id="faq-title" class="text-2xl md:text-3xl font-bold tracking-tight">FAQ</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-neutral-200 bg-white p-5">
+          <h3 class="font-semibold">Is it really free?</h3>
+          <p class="mt-2 text-neutral-600">Yes — Swarm Survivors is free to play in your browser.</p>
+        </div>
+        <div class="rounded-2xl border border-neutral-200 bg-white p-5">
+          <h3 class="font-semibold">Best browser to use?</h3>
+          <p class="mt-2 text-neutral-600">Chrome or Safari is recommended; keep your browser up to date for smoothest gameplay.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-neutral-200 bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-neutral-500 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>&copy; <span id="y"></span> Swarm Survivors — Play Free Online.</p>
+      <nav class="flex items-center gap-4">
+        <a href="#about" class="hover:text-neutral-700">About</a>
+        <a href="#features" class="hover:text-neutral-700">Features</a>
+        <a href="#faq" class="hover:text-neutral-700">FAQ</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // set current year in footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
